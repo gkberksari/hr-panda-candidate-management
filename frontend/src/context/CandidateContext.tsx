@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
-import { Candidate, ApiResponse, FetchCandidatesParams, CandidateFilters } from '../types/candidates';
+import { Candidate, FetchCandidatesParams, CandidateFilters } from '../types/candidates';
 import { fetchCandidates } from '../services/api';
 import { useDebounce } from '../hooks/useDebounce';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Check, ChevronDown, ChevronUp, MoreHorizontal, Search, X } from 'lucide-react';
+import {ChevronDown, ChevronUp, MoreHorizontal, Search} from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,

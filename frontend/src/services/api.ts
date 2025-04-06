@@ -1,5 +1,5 @@
 import { GraphQLClient, gql } from 'graphql-request';
-import { Candidate, ApiResponse, FetchCandidatesParams, CandidateFilters } from '../types/candidates';
+import { Candidate, ApiResponse, FetchCandidatesParams} from '../types/candidates';
 
 // GraphQL API URL ve temel kimlik doğrulama bilgileri
 const API_URL = 'https://staging-api.hrpanda.co/graphql';

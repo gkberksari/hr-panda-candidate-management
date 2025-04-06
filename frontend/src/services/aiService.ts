@@ -1,8 +1,5 @@
 import { CandidateFilters } from '../types/candidates';
 
-interface AIResponse {
-  filters: CandidateFilters;
-}
 
 
 export async function processNaturalLanguageQuery(query: string): Promise<CandidateFilters> {

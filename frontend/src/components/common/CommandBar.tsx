@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Command } from 'cmdk';
 import { Search, X } from 'lucide-react';
 import { useCandidateContext } from '../../context/CandidateContext';
 import { processNaturalLanguageQuery } from '../../services/aiService';
@@ -12,7 +11,6 @@ interface CommandBarProps {
 const CommandBar: React.FC<CommandBarProps> = ({ open, onOpenChange }) => {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
-  const [suggestions, setSuggestions] = useState<string[]>([]);
   const { setFilters } = useCandidateContext();
   const inputRef = useRef<HTMLInputElement>(null);
 
