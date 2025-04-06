@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://hr-candidate-management.vercel.app'],
+    origin: ['http://localhost:5173', 'https://hr-panda-candidate-management.vercel.app'],
     methods: ['GET', 'POST'],
     credentials: true
   }));app.use(express.json());
