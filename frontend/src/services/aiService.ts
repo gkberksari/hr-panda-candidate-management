@@ -1,6 +1,7 @@
 import { CandidateFilters } from '../types/candidates';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+console.log('Using API URL:', API_URL); // Debug için
 
 export async function processNaturalLanguageQuery(query: string): Promise<CandidateFilters> {
   try {
