@@ -1,11 +1,11 @@
 import { CandidateFilters } from '../types/candidates';
 
-
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export async function processNaturalLanguageQuery(query: string): Promise<CandidateFilters> {
   try {
     // Backend proxy'ye istek gönder
-    const response = await fetch('http://localhost:5000/api/process-query', {
+    const response = await fetch(`${API_URL}/api/process-query`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
